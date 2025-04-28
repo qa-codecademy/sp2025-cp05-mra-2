@@ -1,0 +1,305 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.mainImage {
+    height: 50vh;
+    width: 100%;
+    border-radius: 20px;
+    transition: transform 0.3s ease;
+
+}
+
+.mainImage:hover {
+    transform: scale(1.02);
+    /* slightly larger on hover */
+}
+
+.mainImageText {
+    text-align: left;
+    font-size: 3rem;
+    color: magenta;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.mainImageAndTextDiv {
+    position: relative;
+    /* ✅ Needed for absolute children */
+    margin-top: 5%;
+    margin-left: 40px;
+    transform-origin: left center;
+    width: 50%;
+    float: left;
+}
+
+.blurredDivOnTopOfImage {
+    position: absolute;
+    bottom: 2px;
+    /* ✅ Pin it to the bottom */
+    left: 20px;
+    /* Stick it to the left side */
+    width: 150px;
+    padding: 10px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.4);
+    /* Light blurred background */
+    text-align: center;
+    border-radius: 15px;
+    z-index: 2;
+    transition: all 0.3s ease;
+}
+
+.circle10Plus {
+    background-color: rgba(214, 88, 214, 0.6);
+    /* consistent purple */
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin: 0 auto 5px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+}
+
+.mainDivTextAndButtonSubDiv {
+    float: right;
+    width: 40%;
+    margin-top: 7%;
+    margin-right: 4%;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    /* Safari support */
+    color: black;
+    /* or whatever contrasts nicely */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.mainSubDivHeader {
+    font-size: 3rem;
+}
+
+.mainSubDivText {
+    font-size: 2rem;
+}
+
+.mainSubDivButtonServices {
+    background-color: rgb(87, 87, 173);
+    font-size: 1.5rem;
+    margin-top: 5%;
+    border-color: black;
+    border-radius: 10px;
+    width: 30%;
+    color: white;
+}
+
+.statsContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    flex-wrap: wrap;
+    text-align: center;
+    transition: transform 0.3s ease;
+
+}
+
+.statsContainer :hover {
+    transform: scale(1.05);
+    /* slightly larger on hover */
+
+}
+
+.statBlock {
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.2);
+    /* subtle background */
+    backdrop-filter: blur(6px);
+    /* blurred background effect */
+    -webkit-backdrop-filter: blur(6px);
+    border-radius: 15px;
+    min-width: 150px;
+}
+
+.statNumber {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #4CAF50;
+}
+
+.statLabel {
+    font-size: 1rem;
+    color: #333;
+    margin-top: 5px;
+}
+
+/* For tablet and smaller screens */
+@media (max-width: 768px) {
+
+    /* Image and text section */
+    .mainImageAndTextDiv {
+        width: 100%;
+        /* Full width for small screens */
+        margin-left: 0;
+        text-align: center;
+        float: none;
+        /* Prevent floating */
+        margin-top: 20px;
+    }
+
+    /* Make the image smaller on mobile */
+    .mainImage {
+        height: 40vh;
+    }
+
+    /* Blurred div and circle adjust for smaller screens */
+    .blurredDivOnTopOfImage {
+        width: 15vw;
+        /* Make it wider on smaller screens */
+        bottom: 20%;
+        /* Adjust position */
+        margin-left: 10px;
+        /* Adjust margin */
+    }
+
+    .circle10Plus {
+        width: 35px;
+        height: 35px;
+        margin-left: 30px;
+        /* Adjust position */
+    }
+
+    /* Text and button section */
+    .mainDivTextAndButtonSubDiv {
+        width: 90%;
+        /* Take up more space */
+        margin-top: 10%;
+        margin-right: 0;
+        float: none;
+        /* Prevent floating */
+        text-align: center;
+        /* Center align text */
+        padding: 15px;
+    }
+
+    .mainSubDivHeader {
+        font-size: 2.5rem;
+    }
+
+    .mainSubDivText {
+        font-size: 1.5rem;
+    }
+
+    .mainSubDivButtonServices {
+        width: 50%;
+        /* Make button larger */
+        margin-top: 10%;
+    }
+
+    /* Stats Section */
+    .statsContainer {
+        flex-direction: column;
+        /* Stack the stats vertically */
+        gap: 40px;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    .statBlock {
+        width: 80%;
+        /* Make the stat blocks take more width */
+        min-width: 0;
+        text-align: center;
+    }
+
+    .statNumber {
+        font-size: 2rem;
+        /* Slightly smaller font size */
+    }
+
+    .statLabel {
+        font-size: 1rem;
+    }
+}
+
+/* For small mobile screens (below 480px) */
+@media (max-width: 480px) {
+
+    /* Image and text section */
+    .mainImageAndTextDiv {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    .mainImage {
+        height: 35vh;
+        /* Smaller image */
+    }
+
+    /* Adjust the position of blurred div */
+    .blurredDivOnTopOfImage {
+        width: 20vw;
+        bottom: 15%;
+        /* Adjust for smaller screens */
+    }
+
+    .circle10Plus {
+        width: 30px;
+        height: 30px;
+    }
+
+    /* Text and button section */
+    .mainDivTextAndButtonSubDiv {
+        width: 100%;
+        margin-top: 10%;
+        margin-right: 0;
+        float: none;
+        text-align: center;
+    }
+
+    .mainSubDivHeader {
+        font-size: 2rem;
+    }
+
+    .mainSubDivText {
+        font-size: 1.2rem;
+    }
+
+    .mainSubDivButtonServices {
+        width: 60%;
+        font-size: 1.2rem;
+        /* Adjust button text size */
+    }
+
+    /* Stats Section */
+    .statsContainer {
+        flex-direction: column;
+        /* Stack vertically */
+        gap: 30px;
+    }
+
+    .statBlock {
+        width: 90%;
+        /* Stats take up more space */
+    }
+
+    .statNumber {
+        font-size: 1.8rem;
+        /* Smaller numbers */
+    }
+
+    .statLabel {
+        font-size: 1rem;
+    }
+}
