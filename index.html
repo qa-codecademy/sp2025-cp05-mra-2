@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/styleFooter.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet"> -->
+    <title>Navbar-demo</title>
+    <link rel="stylesheet" href="./styles/styleBigImg.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body class="p-3 m-0 border-0 bd-example m-0 border-0">
+
+    <!-- Navbar -->
+    <section>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Mr.AllAround</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">About Us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Gallery </a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Career</a>
+                    </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Services
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Service 1 </a></li>
+                      <li><a class="dropdown-item" href="#">Service 2</a></li>
+                      <li><a class="dropdown-item" href="#">Service 3 </a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </section>
+
+    <!-- Big image -->
+    <section>
+        <div class="mainImageAndTextDiv">
+          <!-- Big Image with "Facility management" -->
+          <h1 class="mainImageText">FACILITY MANAGEMENT</h1>
+          <img class="mainImage" src="https://cmi.issa.com/wp-content/uploads/2021/05/facilities-professionals-card.jpg" alt="">
+          
+          <div class="blurredDivOnTopOfImage">
+            <!-- Blurred div on top of the image to show how many years of experience -->
+            <div class="circle10Plus">
+              <h2 class="PurpleCircleBlurredDiv">10+</h2>
+            </div>
+            <h2 class="blurredDivText">years of experience</h2>
+          </div>
+        </div>
+        
+        <div class="mainDivTextAndButtonSubDiv">
+          <!-- Text and button that scrolls down to services div -->
+          <h1 class="mainSubDivHeader">Professional Facility Management Solutions</h1>
+          <p class="mainSubDivText">Your trusted partner for comprehensive facility services. We provide cleaning, painting, and moving services to keep your property in perfect condition.</p>
+          <button class="mainSubDivButtonServices">SERVICES</button>
+        </div>
+      
+        <!-- Clear any float issues -->
+        <div style="clear: both;"></div>
+      
+        <!-- Stats Section -->
+        <div class="statsContainer">
+          <div class="statBlock">
+            <div class="statNumber">500+</div>
+            <div class="statLabel">Satisfied Clients</div>
+          </div>
+          <div class="statBlock">
+            <div class="statNumber">100+</div>
+            <div class="statLabel">Ongoing Projects</div>
+          </div>
+          <div class="statBlock">
+            <div class="statNumber">10+</div>
+            <div class="statLabel">Years Experience</div>
+          </div>
+        </div>
+      </section>
+
+    <!-- Services -->
+    <section>
+        <h1 class="servicesHeader">Services</h1>
+        <div class="servicesSection">
+            <div class="section">
+                <div class="sectionImg">
+                    <img src="./assets/service1/serviceCleaning.jpg" alt="">
+                </div>
+                <div class="sectionText">
+                    <h2>Cleaning Services</h2>
+                    <p>
+                        Our professional cleaning team uses eco-friendly products and state-of-the-art equipment to
+                        ensure your facility stays spotless and hygienic.
+                    </p>
+                    <ol class="checklist">
+                        <li>Daily Cleaning</li>
+                        <li>Window Washing</li>
+                        <li>Floor Maintenance</li>
+                    </ol>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="sectionImg">
+                    <img src="./assets/service2/serviceMaintence.jpg" alt="">
+                </div>
+                <div class="sectionText">
+                    <h2>Maintenance Services</h2>
+                    <p>
+                        Our experienced technicians keep your facility in top shape by performing routine inspections
+                        and preventive maintenance.
+                    </p>
+                    <ol class="checklist">
+                        <li>HVAC Support</li>
+                        <li>Electrical Repairs</li>
+                        <li>Plumbing Checks</li>
+                    </ol>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="sectionImg">
+                    <img src="./assets/service3/serviceSecurity.jpg" alt="">
+                </div>
+                <div class="sectionText">
+                    <h2>Security Services</h2>
+                    <p>
+                        We offer comprehensive security solutions including surveillance monitoring, on-site personnel,
+                        and access control systems.
+                    </p>
+                    <ol class="checklist">
+                        <li>24/7 Surveillance</li>
+                        <li>Access Control</li>
+                        <li>Emergency Response</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <section>
+        <div class="page-container">
+            <main>
+              <h1>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi
+                voluptates neque ut alias laboriosam, nobis iure eaque laborum
+                repellendus assumenda adipisci quo natus voluptatibus eius ipsum. Quae
+                suscipit est laborum!
+              </h1>
+            </main>
+      
+            <footer class="footer">
+              <div class="footer-container">
+                <div class="footer-column">
+                  <h2 class="footer-logo">MrAllAround</h2>
+                  <p>
+                    Professional facility management services that transform your
+                    space and enhance productivity.
+                  </p>
+                  <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                  </div>
+                </div>
+      
+                <div class="footer-column">
+                  <h3>Quick Links</h3>
+                  <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#">Contact</a></li>
+                  </ul>
+                </div>
+      
+                <div class="footer-column">
+                  <h3>Our Services</h3>
+                  <ul>
+                    <li><a href="#">Cleaning Services</a></li>
+                    <li><a href="#">Painting Services</a></li>
+                    <li><a href="#">Moving Out Services</a></li>
+                    <li><a href="#">Maintenance</a></li>
+                    <li><a href="#">Consultation</a></li>
+                  </ul>
+                </div>
+      
+                <div class="footer-column">
+                  <h3>Newsletter</h3>
+                  <p>
+                    Subscribe to our newsletter to get updates on our services and
+                    promotions.
+                  </p>
+                  <form class="newsletter-form">
+                    <input type="email" placeholder="Your Email" />
+                    <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                  </form>
+                  <div class="contact-info">
+                    <p>
+                      <i class="fas fa-map-marker-alt"></i> 123 Business Street, NY
+                      10001
+                    </p>
+                    <p><i class="fas fa-phone-alt"></i> +1 (555) 123-4567</p>
+                    <p><i class="fas fa-envelope"></i> info@facilitypro.com</p>
+                  </div>
+                </div>
+              </div>
+              <div class="footer-bottom">
+                <p>Â© 2025 MrAllAround. All rights reserved.</p>
+              </div>
+            </footer>
+          </div>
+    </section>
+
+</body>
+
+</html>
