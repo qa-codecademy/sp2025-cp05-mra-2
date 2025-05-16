@@ -1,0 +1,133 @@
+/* Global Styles */
+html, body {
+    height: 100%;
+    margin: 0;
+    background-color: #e0e0e0;
+    font-family: 'Segoe UI', sans-serif;
+    color: #000;
+}
+
+/* Page Layout */
+.page-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 50vh;
+    width: 100%;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    flex: 1;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #fff;
+    color: #000;
+    padding: 40px 20px 20px;
+    margin-top: auto;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.footer-column {
+    flex: 1 1 220px;
+    min-width: 220px;
+}
+
+.footer-logo {
+    font-size: 28px;
+    color: #ff00ff;
+    margin-bottom: 10px;
+}
+
+.footer-column h3,
+.footer-column p {
+    color: #000;
+    margin-top: 0;
+    font-weight: bold;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-column ul li {
+    margin: 8px 0;
+}
+
+.footer-column ul li a,
+.social-icons a {
+    color: #000;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-column ul li a:hover,
+.social-icons a:hover {
+    color: #ff00ff;
+}
+
+/* Social Icons */
+.social-icons a {
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+/* Newsletter Form */
+.newsletter-form {
+    display: flex;
+    margin: 15px 0;
+}
+
+.newsletter-form input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+    font-size: 14px;
+}
+
+.newsletter-form button {
+    background-color: #ff00ff;
+    color: #fff;
+    border: none;
+    padding: 0 15px;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.newsletter-form button:hover {
+    background-color: #cc00cc;
+}
+
+/* Contact Info */
+.contact-info p {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 8px 0;
+    color: #000;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    border-top: 2px solid #000;
+    padding-top: 10px;
+    font-size: 14px;
+    color: #000;
+}
