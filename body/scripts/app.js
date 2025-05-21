@@ -1,6 +1,12 @@
 document.addEventListener("DOMContentLoaded", function () {
     const button = document.getElementById("goToServicesDiv");
     const target = document.getElementById("targetSection");
+    const buttonGerman = document.getElementById("goToServicesDivGerman");
+    const targetGerman = document.getElementById("targetSectionGerman");
+
+    buttonGerman.addEventListener("click", function(){
+       targetGerman.scrollIntoView({ behavior: "smooth" })
+    })
 
     button.addEventListener("click", function () {
         target.scrollIntoView({ behavior: "smooth" });

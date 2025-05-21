@@ -1,56 +1,643 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="career.css">
-    <title>Document</title>
-</head>
-<body>
-       <form id="applicationForm">
-    <h2>Apply Now</h2>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Career Application</title>
+    <link rel="icon" href="../assets/logoTab.png" type="image/png" />
+    <link rel="stylesheet" href="../navbar/navbar.css" />
+    <link rel="stylesheet" href="../footer/footer.css" />
+    <link rel="stylesheet" href="career.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../navbar/navbar.css">
+  </head>
 
-    <label for="firstName">First Name</label>
-    <input type="text" id="firstName" required>
+  <body>
+    <div class="english" id="english">
+      <!-- Navbar -->
+      <section>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+              <img
+                src="/sp2025-cp05-mra-2/assets/logoTab.png"
+                alt="MrAllAround-Logo"
+                width="70"
+                height="50"
+              />
+            </a>
 
-    <label for="lastName">Last Name</label>
-    <input type="text" id="lastName" required>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNavDropdown"
+              aria-controls="navbarNavDropdown"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
 
-    <label for="email">Email</label>
-    <input type="email" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,}$" required>
-    <div class="error" id="emailError"></div>
+            <div
+              class="collapse navbar-collapse justify-content-between"
+              id="navbarNavDropdown"
+            >
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="../index.html"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../aboutUs/aboutUs.html"
+                    >About Us</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../career/career.html">Career</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Services
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="../services/CleaningService/Cleaning.html"
+                        >Cleaning Services</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="../services/Maintenance Service/Maintenance.html"
+                        >Maintenance Services</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="../services/Security Service/Security.html"
+                        >Security Services</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+              </ul>
 
-    <label for="phone">Phone Number</label>
-    <div style="display: flex; gap: 10px;">
-      <select id="phoneCode" required>
-        <option value="+389">+389</option>
-        <option value="+1">+1 (USA, Canada)</option>
-        <option value="+44">+44 (UK)</option>
-        <option value="+49">+49 (Germany)</option>
-        <option value="+33">+33 (France)</option>
-        <option value="+91">+91 (India)</option>
-        <option value="+61">+61 (Australia)</option>
-      </select>
-      <input type="text" id="phone" pattern="^\d{9}$" placeholder="000000000" required>
+              <div class="d-flex align-items-center gap-3" style="margin-right: 150px;">
+            <button class="dark-mode-toggle" id="darkModeToggle">
+              <span class="toggle-icon"></span>
+            </button>
+
+              
+              <div class="language-toggle">
+                <div
+                  class="btn-group"
+                  role="group"
+                  aria-label="Language toggle"
+                >
+                  <input
+                    type="radio"
+                    class="btn-check"
+                    name="lang"
+                    id="eng"
+                    autocomplete="off"
+                  />
+                  <label class="btn btn-outline-primary" for="eng">ENG</label>
+
+                  <input
+                    type="radio"
+                    class="btn-check"
+                    name="lang"
+                    id="ger"
+                    autocomplete="off"
+                  />
+                  <label class="btn btn-outline-primary" for="ger">GER</label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </section>
+
+      <!-- Main Content -->
+      <main class="main-content">
+        <div class="career-container">
+          <div class="form-wrapper">
+            <!-- Image Section -->
+            <div class="form-image">
+              <div class="image-overlay"></div>
+              <div class="image-content">
+                <h2>Advance Your Career in Facility Management</h2>
+                <p>
+                  Join a team committed to operational excellence, safety, and
+                  sustainable infrastructure solutions.
+                </p>
+              </div>
+            </div>
+
+            <!-- Form Section -->
+            <div class="form-content">
+              <form id="applicationForm">
+                <div class="form-header">
+                  <h2>Join Our Team</h2>
+                  <p>Fill out the form to start your journey</p>
+                </div>
+
+                <div class="input-group">
+                  <div class="input-row">
+                    <div class="input-field">
+                      <label for="firstName">First Name</label>
+                      <input type="text" id="firstName" required />
+                    </div>
+                    <div class="input-field">
+                      <label for="lastName">Last Name</label>
+                      <input type="text" id="lastName" required />
+                    </div>
+                  </div>
+
+                  <div class="input-field">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" required />
+                    <div class="error" id="emailError"></div>
+                  </div>
+
+                  <div class="input-field">
+                    <label for="phone">Phone Number</label>
+                    <div class="phone-group">
+                      <select id="phoneCode" required>
+                        <option value="+389">+389</option>
+                        <option value="+1">+1</option>
+                        <option value="+44">+44</option>
+                      </select>
+                      <input
+                        type="text"
+                        id="phone"
+                        placeholder="000000000"
+                        pattern="^\d{9}$"
+                        required
+                      />
+                    </div>
+                    <div class="error" id="phoneError"></div>
+                  </div>
+
+                  <div class="input-field">
+                    <label for="service">Service Area</label>
+                    <select id="service" required>
+                      <option disabled selected value="">
+                        Select a service
+                      </option>
+                      <option value="Cleaning">Cleaning</option>
+                      <option value="Maintenance">Maintenance</option>
+                      <option value="Security">Security</option>
+                    </select>
+                  </div>
+
+                  <div class="input-field">
+                    <label for="reason">Why should we hire you?</label>
+                    <textarea
+                      id="reason"
+                      rows="3"
+                      placeholder="Tell us why you're a great fit"
+                      required
+                    ></textarea>
+                  </div>
+
+                  <div class="input-field">
+                    <label for="cv">Upload Your CV</label>
+                    <div class="file-upload">
+                      <input
+                        type="file"
+                        id="cv"
+                        accept=".pdf,.doc,.docx"
+                        required
+                      />
+                      <span class="file-custom">Choose file...</span>
+                    </div>
+                  </div>
+
+                  <button type="submit" class="submit-btn">
+                    <span>Submit Application</span>
+                    <svg viewBox="0 0 24 24" width="20" height="20">
+                      <path
+                        fill="currentColor"
+                        d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z"
+                      ></path>
+                    </svg>
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="footer-container">
+          <div class="footer-column">
+            <h2 class="footer-logo">MrAllAround</h2>
+            <p>
+              Professional facility management services that transform your
+              space and enhance productivity.
+            </p>
+            <div class="social-icons">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+
+          <div class="footer-column">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="/sp2025-cp05-mra-2/index.html">Home</a></li>
+              <li><a href="../aboutUs/aboutUs.html">About</a></li>
+              <li><a href="../index.html">Services</a></li>
+              <li><a href="">Gallery</a></li>
+              <li><a href="../index.html">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h3>Our Services</h3>
+            <ul>
+              <li>
+                <a href="../services/CleaningService/Cleaning.html"
+                  >Cleaning services</a
+                >
+              </li>
+              <li>
+                <a href="../services/Maintenance Service/Maintenance.html"
+                  >Maintenance services</a
+                >
+              </li>
+              <li>
+                <a href="../services/Security Service/Security.html"
+                  >Security services</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h3>Newsletter</h3>
+            <p>
+              Subscribe to our newsletter to get updates on our services and
+              promotions.
+            </p>
+            <form class="newsletter-form">
+              <input type="email" placeholder="Your Email" />
+              <button type="submit"><i class="fas fa-paper-plane"></i></button>
+            </form>
+            <div class="contact-info">
+              <p>
+                <i class="fas fa-map-marker-alt"></i> 123 Business Street, NY
+                10001
+              </p>
+              <p><i class="fas fa-phone-alt"></i> +1 (555) 123-4567</p>
+              <p><i class="fas fa-envelope"></i> info@facilitypro.com</p>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>© 2025 MrAllAround. All rights reserved.</p>
+        </div>
+      </footer>
     </div>
-    <div class="error" id="phoneError"></div>
 
-    <label for="service">What service are you applying for?</label>
-    <select id="service" required>
-      <option value="" disabled selected>Select a service</option>
-      <option value="Cleaning">Cleaning</option>
-      <option value="Maintenance">Maintenance</option>
-      <option value="Security">Security</option>
-    </select>
+    <div class="german" id="german" style="display: none;">
+      <!-- Navbar -->
+      <section>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+              <img
+                src="/sp2025-cp05-mra-2/assets/logoTab.png"
+                alt="MrAllAround-Logo"
+                width="70"
+                height="50"
+              />
+            </a>
 
-    <div id="reasonContainer">
-      <label for="reason" id="reasonLabel">Why should we hire you?</label>
-      <textarea id="reason" rows="4" placeholder="Tell us why you're the best fit for the job!" required></textarea>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNavDropdown"
+              aria-controls="navbarNavDropdown"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div
+              class="collapse navbar-collapse justify-content-between"
+              id="navbarNavDropdown"
+            >
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="../index.html"
+                    >Heim</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../aboutUs/aboutUs.html"
+                    >Über uns</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../career/career.html">Karriere</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Services
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="../services/CleaningService/Cleaning.html"
+                        >Reinigungsdienste</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="../services/Maintenance Service/Maintenance.html"
+                      >
+                        Wartungsdienste</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="../services/Security Service/Security.html"
+                        >Sicherheitsdienste</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+
+              <div class="d-flex align-items-center gap-3" style="margin-right: 150px;">
+            <button class="dark-mode-toggle-german" id="darkModeToggle-german">
+              <span class="toggle-icon-german"></span>
+            </button>
+
+              <div class="language-toggle">
+              <div class="btn-group" role="group" aria-label="Language toggle">
+                <input
+                  type="radio"
+                  class="btn-check"
+                  name="lang"
+                  id="eng"
+                  autocomplete="off"
+                />
+                <label class="btn btn-outline-primary" for="eng">ENG</label>
+
+                <input
+                  type="radio"
+                  class="btn-check"
+                  name="lang"
+                  id="ger"
+                  autocomplete="off"
+                />
+                <label class="btn btn-outline-primary" for="ger">GER</label>
+              </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </section>
+
+      <!-- Main Content -->
+      <main class="main-content">
+        <div class="career-container">
+          <div class="form-wrapper">
+            <!-- Image Section -->
+            <div class="form-image">
+              <div class="image-overlay"></div>
+              <div class="image-content">
+                <h2>Bringen Sie Ihre Karriere im Facility Management voran</h2>
+                <p>
+                  Werden Sie Teil eines Teams, das sich für operative Exzellenz,
+                  Sicherheit und nachhaltige Infrastrukturlösungen einsetzt.
+                </p>
+              </div>
+            </div>
+
+            <!-- Form Section -->
+            <div class="form-content">
+              <form id="applicationForm">
+                <div class="form-header">
+                  <h2>Treten Sie unserem Team bei</h2>
+                  <p>Füllen Sie das Formular aus, um Ihre Reise zu beginnen</p>
+                </div>
+
+                <div class="input-group">
+                  <div class="input-row">
+                    <div class="input-field">
+                      <label for="firstName">Vorname</label>
+                      <input type="text" id="firstName" required />
+                    </div>
+                    <div class="input-field">
+                      <label for="lastName">Nachname</label>
+                      <input type="text" id="lastName" required />
+                    </div>
+                  </div>
+
+                  <div class="input-field">
+                    <label for="email">E-Mail</label>
+                    <input type="email" id="email" required />
+                    <div class="error" id="emailError"></div>
+                  </div>
+
+                  <div class="input-field">
+                    <label for="phone">Telefonnummer</label>
+                    <div class="phone-group">
+                      <select id="phoneCode" required>
+                        <option value="+389">+389</option>
+                        <option value="+1">+1</option>
+                        <option value="+44">+44</option>
+                      </select>
+                      <input
+                        type="text"
+                        id="phone"
+                        placeholder="000000000"
+                        pattern="^\d{9}$"
+                        required
+                      />
+                    </div>
+                    <div class="error" id="phoneError"></div>
+                  </div>
+
+                  <div class="input-field">
+                    <label for="service">Servicebereich</label>
+                    <select id="service" required>
+                      <option disabled selected value="">
+                        Wählen Sie einen Dienst aus
+                      </option>
+                      <option value="Cleaning">Reinigung</option>
+                      <option value="Maintenance">Wartung</option>
+                      <option value="Security">Sicherheit</option>
+                    </select>
+                  </div>
+
+                  <div class="input-field">
+                    <label for="reason"
+                      >Warum sollten wir Sie einstellen?</label
+                    >
+                    <textarea
+                      id="reason"
+                      rows="3"
+                      placeholder="Tell us why you're a great fit"
+                      required
+                    ></textarea>
+                  </div>
+
+                  <div class="input-field">
+                    <label for="cv">Laden Sie Ihren Lebenslauf hoch</label>
+                    <div class="file-upload">
+                      <input
+                        type="file"
+                        id="cv"
+                        accept=".pdf,.doc,.docx"
+                        required
+                      />
+                      <span class="file-custom">Datei auswählen...</span>
+                    </div>
+                  </div>
+
+                  <button type="submit" class="submit-btn">
+                    <span>Bewerbung einreichen</span>
+                    <svg viewBox="0 0 24 24" width="20" height="20">
+                      <path
+                        fill="currentColor"
+                        d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z"
+                      ></path>
+                    </svg>
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="footer-container">
+          <div class="footer-column">
+            <h2 class="footer-logo">MrAllAround</h2>
+            <p>
+              Professionelle Facility-Management-Services, die Ihre
+              Räumlichkeiten transformieren und die Produktivität steigern.
+            </p>
+            <div class="social-icons">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+
+          <div class="footer-column">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="/sp2025-cp05-mra-2/index.html">Heim</a></li>
+              <li><a href="../aboutUs/aboutUs.html">Um</a></li>
+              <li><a href="../index.html">Dienstleistungen</a></li>
+              <li><a href="">Galerie</a></li>
+              <li><a href="../index.html">Kontakt</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h3>Unsere Leistungen</h3>
+            <ul>
+              <li>
+                <a href="../services/CleaningService/Cleaning.html"
+                  >Reinigungsdienste</a
+                >
+              </li>
+              <li>
+                <a href="../services/Maintenance Service/Maintenance.html"
+                  >Wartungsdienste</a
+                >
+              </li>
+              <li>
+                <a href="../services/Security Service/Security.html"
+                  >Sicherheitsdienste</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h3>Newsletter</h3>
+            <p>
+              Abonnieren Sie unseren Newsletter, um über unsere Dienstleistungen
+              und Aktionen auf dem Laufenden zu bleiben.
+            </p>
+            <form class="newsletter-form">
+              <input type="email" placeholder="Your Email" />
+              <button type="submit"><i class="fas fa-paper-plane"></i></button>
+            </form>
+            <div class="contact-info">
+              <p>
+                <i class="fas fa-map-marker-alt"></i> 123 Business Street, NY
+                10001
+              </p>
+              <p><i class="fas fa-phone-alt"></i> +1 (555) 123-4567</p>
+              <p><i class="fas fa-envelope"></i> info@facilitypro.com</p>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>© 2025 MrAllAround. All rights reserved.</p>
+        </div>
+      </footer>
     </div>
 
-    <button type="submit">Submit</button>
-  </form>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
     <script src="career.js"></script>
-</body>
+
+    <script src="../navbar/lightDark.js"></script>
+    <script src="../navbar/lightDarkGerman.js"></script>
+  </body>
 </html>

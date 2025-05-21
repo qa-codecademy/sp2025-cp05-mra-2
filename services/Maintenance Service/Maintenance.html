@@ -5,22 +5,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="/navbar/navbar.css">
-    <link rel="stylesheet" href="/footer/footer.css">
+    <link rel="stylesheet" href="../../navbar/navbar.css">
+    <link rel="stylesheet" href="../../footer/footer.css">
     <link rel="stylesheet" href="../services.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
     <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="../../navbar/navbar.css">
 </head>
 
 <body>
+    <div id="english" class="english">
     <!-- Navbar -->
     <section>
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
-                    <img src="/assets/logoTab.png" alt="MrAllAround-Logo" width="70" height="50" />
+                    <img src="../../assets/logoTab.png" alt="MrAllAround-Logo" width="70" height="50" />
                 </a>
 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -32,13 +34,13 @@
                 <div class="collapse navbar-collapse justify-content-between" id="navbarNavDropdown">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+                            <a class="nav-link active" aria-current="page" href="../../index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/aboutUs/aboutUs.html">About Us</a>
+                            <a class="nav-link" href="../../aboutUs/aboutUs.html">About Us</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/career/career.html">Career</a>
+                            <a class="nav-link" href="../../career/career.html">Career</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
@@ -46,16 +48,21 @@
                                 Services
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="/services/CleaningService/Cleaning.html">Cleaning
+                                <li><a class="dropdown-item" href="../../services/CleaningService/Cleaning.html">Cleaning
                                         Services</a></li>
                                 <li><a class="dropdown-item"
-                                        href="/services/Maintenance Service/Maintenance.html">Maintenance
+                                        href="../../services/Maintenance Service/Maintenance.html">Maintenance
                                         Services</a></li>
-                                <li><a class="dropdown-item" href="/services/Security Service/Security.html">Security
+                                <li><a class="dropdown-item" href="../../services/Security Service/Security.html">Security
                                         Services</a></li>
                             </ul>
                         </li>
                     </ul>
+
+                    <div class="d-flex align-items-center gap-3">
+            <button class="dark-mode-toggle" id="darkModeToggle">
+              <span class="toggle-icon"></span>
+            </button>
 
                     <div class="btn-group" role="group" aria-label="Language toggle">
                         <input type="radio" class="btn-check" name="lang" id="eng" autocomplete="off" checked />
@@ -71,7 +78,7 @@
 
     <!-- Maintenance Services -->
     <section>
-        <div class="page-container">
+        <div class="page-container2">
             <main>
                 <h1 class="servicesHeader">Maintenance Services</h1>
                 <h3>Maintenance Services</h3>
@@ -83,26 +90,30 @@
                 </p>
                 </p>
                 <br>
-
-                <div class="servicesSection">
-                    <div class="section">
-                        <div class="sectionImg">
-                            <img src="/assets/service2/serviceMaintence.jpg" alt="">
-                        </div>
-                    </div>
-
-                    <div class="section">
-                        <div class="sectionImg">
-                            <img src="/assets/service2/serviceMaintance-img1.jpg" alt="">
-                        </div>
-                    </div>
-
-                    <div class="section">
-                        <div class="sectionImg">
-                            <img src="/assets/service2/serviceMaintance-img2.jpg" alt="">
-                        </div>
-                    </div>
+            </main>
+        </div>
+        <div class="servicesSection">
+            <div class="section">
+                <div class="sectionImg">
+                    <img src="../../assets/service2/serviceMaintence.jpg" alt="">
                 </div>
+            </div>
+
+            <div class="section">
+                <div class="sectionImg">
+                    <img src="../../assets/service2/serviceMaintance-img1.jpg" alt="">
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="sectionImg">
+                    <img src="../../assets/service2/serviceMaintance-img2.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="page-container2">
+            <main>
+
                 <br>
                 <h4>What We Offer</h4>
                 <h5>HVAC Support</h5>
@@ -201,20 +212,20 @@
                     <div class="footer-column">
                         <h3>Quick Links</h3>
                         <ul>
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">About</a></li>
-                            <li><a href="#targetSection">Services</a></li>
-                            <li><a href="#">Gallery</a></li>
-                            <li><a href="#">Contact</a></li>
+                            <li><a href="../../index.html">Home</a></li>
+                            <li><a href="../../aboutUs/aboutUs.html">About</a></li>
+                            <li><a href="../../index.html">Services</a></li>
+                            <li><a href="../../index.html">Gallery</a></li>
+                            <li><a href="../../aboutUs/aboutUs.html">Contact</a></li>
                         </ul>
                     </div>
 
                     <div class="footer-column">
                         <h3>Our Services</h3>
                         <ul>
-                            <li><a href="#">Cleaning services</a></li>
-                            <li><a href="#">Maintenance services</a></li>
-                            <li><a href="#">Security services</a></li>
+                            <li><a href="../CleaningService/Cleaning.html">Cleaning services</a></li>
+                            <li><a href="../Maintenance Service/Maintenance.html">Maintenance services</a></li>
+                            <li><a href="../Security Service/Security.html">Security services</a></li>
                         </ul>
                     </div>
 
@@ -244,6 +255,301 @@
             </footer>
         </div>
     </section>
+</div>
+
+
+
+
+
+                                                        <!-- GERMAN -->
+
+
+
+
+
+<div class="german" id="german" style="display: none;">
+<section>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="../../assets/logoTab.png" alt="MrAllAround-Logo" width="70" height="50" />
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-between" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../../index.html">Zuhause</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../aboutUs/aboutUs.html">Über uns</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../career/career.html">Karriere</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Dienstleistungen
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../../services/CleaningService/Cleaning.html">Reinigungsdienste</a></li>
+                                <li><a class="dropdown-item"
+                                        href="../../services/Maintenance Service/Maintenance.html">Wartungsdienste</a></li>
+                                <li><a class="dropdown-item" href="../../services/Security Service/Security.html">Sicherheitsdienste</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <div class="d-flex align-items-center gap-3">
+            <button class="dark-mode-toggle-german" id="darkModeToggle-german">
+              <span class="toggle-icon-german"></span>
+            </button>
+
+                    <div class="btn-group" role="group" aria-label="Language toggle">
+                        <input type="radio" class="btn-check" name="lang" id="eng" autocomplete="off" checked />
+                        <label class="btn btn-outline-primary" for="eng">ENG</label>
+
+                        <input type="radio" class="btn-check" name="lang" id="ger" autocomplete="off" />
+                        <label class="btn btn-outline-primary" for="ger">GER</label>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </section>
+
+    <!-- Maintenance Services -->
+    <section>
+        <div class="page-container2">
+            <main>
+                <h1 class="servicesHeader">Wartungsdienste</h1>
+                <h3>Wartungsdienste</h3>
+                <p>
+                    Unsere täglichen Wartungsdienste sorgen dafür, dass Ihre
+              Einrichtung jeden Tag sauber, sicher und voll betriebsfähig
+              bleibt. Wir übernehmen routinemäßige Aufgaben wie Reinigungen,
+              Überprüfungen von Geräten, Abfallentsorgung und kleinere
+              Reparaturen, um Ihre Umgebung effizient und problemfrei zu halten.
+              Mit konsequenter täglichen Pflege helfen wir, kleine Probleme
+              daran zu hindern, sich zu größeren Störungen zu entwickeln.
+                </p>
+                </p>
+                <br>
+            </main>
+        </div>
+        <div class="servicesSection">
+            <div class="section">
+                <div class="sectionImg">
+                    <img src="../../assets/service2/serviceMaintence.jpg" alt="">
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="sectionImg">
+                    <img src="../../assets/service2/serviceMaintance-img1.jpg" alt="">
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="sectionImg">
+                    <img src="../../assets/service2/serviceMaintance-img2.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="page-container2">
+            <main>
+
+                <br>
+                <h4>Was wir anbieten</h4>
+                <h5>HVAC-Unterstützung</h5>
+                <p>HLK (Heizung, Belüftung und Klimaanlage) Systeme sind essenziell
+              für die Aufrechterhaltung einer komfortablen und gesunden
+              Innenumgebung. Regelmäßige HLK-Unterstützung sorgt dafür, dass
+              diese Systeme effizient arbeiten, optimale Luftqualität und
+              Temperaturkontrolle bieten und gleichzeitig den Energieverbrauch
+              minimieren. Unsere fachkundigen Techniker sind darin geschult,
+              routinemäßige Inspektionen, Reinigungen und präventive Wartung
+              durchzuführen, um Ihre HLK-Systeme reibungslos am Laufen zu
+              halten. Von der Überprüfung des Kältemittelstandes und der
+              Inspektion von Lüftungsleitungen bis hin zur Sicherstellung, dass
+              Thermostate richtig kalibriert sind, konzentrieren wir uns darauf,
+              die Lebensdauer und Leistung Ihres Systems zu maximieren.</p>
+                <ul>
+                    <li><b>Routineinspektionen:</b> Frühe Identifizierung potenzieller
+                Probleme wie Lecks, abgenutzte Komponenten oder
+                Luftstromprobleme.</li>
+                    <li><b>Wartung in der Prävention:</b> Regelmäßige Reinigung und
+                Einstellung, um die Systemeffizienz zu erhalten und kostspielige
+                Ausfälle zu verhindern.</li>
+                    <li><b>Reparaturen und Ersatzteile:</b> Schnelle Reparaturen oder
+                Teileaustausch, um die optimale Leistung wiederherzustellen.</li>
+                    <li><b>Energieeffizienz-Audits:</b> ADie Analyse der Systemeffizienz
+                und die Empfehlung von Verbesserungen zur Senkung der
+                Energiekosten.</li>
+                </ul>
+                <p>Mit unseren HVAC-Supportdiensten können Sie das ganze Jahr über
+              eine angenehme Umgebung genießen, während Sie Systemausfallzeiten
+              und Reparaturkosten minimieren. Lassen Sie uns sicherstellen, dass
+              Ihr HVAC-System immer optimal funktioniert.
+                </p>
+                <h5>Elektrische Reparaturen</h5>
+                <p>Elektrische Systeme sind das Rückgrat jedes Gebäudes und versorgen
+              alles von Beleuchtung und Geräten bis hin zu kritischen Anlagen
+              mit Strom. Wenn elektrische Probleme auftreten, können sie den
+              täglichen Betrieb stören, Sicherheitsrisiken darstellen und zu
+              kostspieligen Schäden führen, wenn sie nicht umgehend behoben
+              werden. Hier kommen unsere fachkundigen Reparaturdienste für
+              Elektrik ins Spiel. Unsere erfahrenen Techniker sind geschult, um
+              eine breite Palette von elektrischen Reparaturbedürfnissen zu
+              behandeln, von kleinen Fehlersuchen bis hin zu komplexen
+              Systemüberholungen. Ob es sich um einen defekten Stromkreis, einen
+              Spannungsspitze oder veraltete Verkabelung handelt, wir bieten
+              schnelle, zuverlässige und sichere Lösungen, um Ihre elektrischen
+              Systeme auf Höchstleistung zurückzusetzen.</p>
+                <b>Die Elektroschlüssel Elektronikreparaturdienstleistungen
+              umfassen:</b>
+                <ul>
+                    <li><b>Sicherungsreparaturen:</b> Sicherstellen, dass die
+                Sicherungen richtig funktionieren, um Überlastungen und
+                Kurzschlüsse zu verhindern.</li>
+                    <li><b>Verdrahtungs- und Steckdosenreparaturen:</b> Ersetzen oder
+                Reparieren beschädigter Kabel, Steckdosen und Schalter, um
+                elektrische Gefahren zu vermeiden.</li>
+                    <li><b>Beleuchtung Reparaturen:</b> Fehlerbehebung und Reparatur von
+                Beleuchtungsproblemen, einschließlich flimmernder Lichter oder
+                defekter Leuchten.</li>
+                    <li><b>Sicherungs- und Schalttafel-Upgrades:</b> RErsetzen oder
+                Aufrüsten veralteter Sicherungskästen und elektrischer
+                Schaltkästen zur Verbesserung der Sicherheit und efficiency.</li>
+                    <li><b>Fehlerbehebung und Diagnosen:</b> Identifizierung und
+                Behebung zugrunde liegender Probleme, die Ihre elektrischen
+                Systeme betreffen.</li>
+                </ul>
+                <p>Mit unseren Elektro-Reparaturdiensten können Sie beruhigt sein,
+              dass Ihre elektrischen Systeme in sicheren Händen sind. Wir
+              konzentrieren uns auf pünktliche Reparaturen, minimale Störungen
+              und Sicherheit und stellen sicher, dass Ihr Zuhause oder Ihr
+              Unternehmen weiterhin mit Strom versorgt wird und ohne elektrische
+              Bedenken betriebsfähig bleibt.</p>
+                <h5>Plumbing Prüfungen</h5>
+                <p> Die Sanitärinstallation ist ein entscheidender Bestandteil der
+              Infrastruktur Ihres Hauses oder Unternehmens, der einen
+              reibungslosen Wasser- und Abfluss gewährleistet. Regelmäßige
+              Sanitärüberprüfungen sind unerlässlich, um Lecks, Verstopfungen
+              und kostspielige Wasserschäden zu verhindern. Routinewartungen
+              können Ihnen helfen, unerwartete Sanitärnotfälle zu vermeiden und
+              die Lebensdauer Ihrer Rohre und Armaturen zu verlängern. Unsere
+              professionellen Klempner sind auf gründliche Sanitärprüfungen
+              spezialisiert und identifizieren potenzielle Probleme, bevor sie
+              zu größeren Problemen werden. Von der Überprüfung des Wasserdrucks
+              bis hin zur Kontrolle auf Lecks und Blockaden sorgt unser Team
+              dafür, dass Ihr Sanitärsystem optimal funktioniert.</p>
+                <p><b>Wichtige Sanitärprüfungsdienste umfassen:</b></p>
+                <ul>
+                    <li><b>Leckageerkennung:</b> Verborgene Lecks in Rohren,
+                Wasserhähnen und Geräten identifizieren, um Wasserschäden und
+                -verschwendung zu verhindern.</li>
+                    <li><b>Wasserdruckprüfung:</b>icherstellen, dass Ihr Wasserdruck
+                im optimalen Bereich liegt, um Belastung für Ihre Rohre und
+                Geräte zu vermeiden.</li>
+                    <li><b> Abwasserinspektionen:</b> Überprüfung auf Verstopfungen oder
+                Blockaden in Abflüssen, Toiletten und Abwasserleitungen, um
+                Rückstau und unangenehme Gerüche zu verhindern.</li>
+                    <li><b>Rohrinspektionen:</b> EDie Überprüfung des Zustands Ihrer
+                Rohre, um Anzeichen von Korrosion, Verschleiß oder Leckagen zu
+                erkennen. </li>
+                    <li><b>Überprüfungen der Aufstellungen:</b> icherstellen, dass
+                Wasserhähne, Duschköpfe und Toiletten effizient funktionieren
+                und richtig abgedichtet sind, um Wasserverschwendung zu
+                vermeiden.</li>
+                </ul>
+                <p> Mit unseren Rohrleitungsprüfungen können Sie sich darauf
+              verlassen, dass Ihr Sanitärsystem in einwandfreiem Zustand ist.
+              Regelmäßige Wartung kann Ihnen Kosten für Reparaturen sparen,
+              Wasser sparen und sicherstellen, dass Ihre Sanitäranlagen
+              reibungslos funktionieren, wodurch kostspielige Störungen
+              verhindert werden.</p>
+            </main>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <section>
+        <div class="page-container">
+            <footer class="footer">
+                <div class="footer-container">
+                    <div class="footer-column">
+                        <h2 class="footer-logo">MrAllAround</h2>
+                        <p>
+                            rofessionelle Facility-Management-Dienstleistungen, die Ihren
+                  Raum verändern und die Produktivität steigern.
+                        </p>
+                        <div class="social-icons">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="footer-column">
+                        <h3>Quick Links</h3>
+                        <ul>
+                            <li><a href="../../index.html">Zuhause</a></li>
+                            <li><a href="../../aboutUs/aboutUs.html">AboÜberut</a></li>
+                            <li><a href="../../index.html">Dienstleistungen</a></li>
+                            <li><a href="../../index.html">Galerie</a></li>
+                            <li><a href="../../aboutUs/aboutUs.html">Kontakt</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-column">
+                        <h3>Our Services</h3>
+                        <ul>
+                            <li><a href="../CleaningService/Cleaning.html">Reinigungsdienste</a></li>
+                            <li><a href="../Maintenance Service/Maintenance.html">Wartungsdienste</a></li>
+                            <li><a href="../Security Service/Security.html">Sicherheitsdienste</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-column">
+                        <h3>Newsletter</h3>
+                        <p>
+                            Subscribe to our newsletter to get updates on our services and
+                            promotions.
+                        </p>
+                        <form class="newsletter-form">
+                            <input type="email" placeholder="Your Email" />
+                            <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                        </form>
+                        <div class="contact-info">
+                            <p>
+                                <i class="fas fa-map-marker-alt"></i> 123 Business Street, NY
+                                10001
+                            </p>
+                            <p><i class="fas fa-phone-alt"></i> +1 (555) 123-4567</p>
+                            <p><i class="fas fa-envelope"></i> info@facilitypro.com</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>Â© 2025 MrAllAround. All rights reserved.</p>
+                </div>
+            </footer>
+        </div>
+    </section>
+
+</div>
+    <script src="../../navbar/lightDark.js"></script>
+    <script src="../../navbar/lightDarkGerman.js"></script>
+    <script src="../../navbar/navbarApp.js"></script>
+    <!-- <script ></script> STAVI GERMAN SCRIPT  -->
 </body>
 
 </html>
+

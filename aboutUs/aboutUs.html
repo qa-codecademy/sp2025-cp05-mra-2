@@ -15,6 +15,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="./home/aboutUs/aboutUs.css" />
   <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="../navbar/navbar.css">
 </head>
 
 <body class="p-3 m-0 border-0 bd-example m-0 border-0">
@@ -38,10 +39,10 @@
               <a class="nav-link" aria-current="page" href="../index.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="./aboutUs.html">About Us</a>
+              <a class="nav-link active" href="../aboutUs/aboutUs.html">About Us</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/career/career.html">Career</a>
+              <a class="nav-link" href="../career/career.html">Career</a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
@@ -49,13 +50,18 @@
                 Services
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="/services/CleaningService/Cleaning.html">Cleaning Services</a></li>
-                <li><a class="dropdown-item" href="/services/Maintenance Service/Maintenance.html">Maintenance
+                <li><a class="dropdown-item" href="../services/CleaningService/Cleaning.html">Cleaning Services</a></li>
+                <li><a class="dropdown-item" href="../services/Maintenance Service/Maintenance.html">Maintenance
                     Services</a></li>
-                <li><a class="dropdown-item" href="/services/Security Service/Security.html">Security Services</a></li>
+                <li><a class="dropdown-item" href="../services/Security Service/Security.html">Security Services</a></li>
               </ul>
             </li>
           </ul>
+
+          <div class="d-flex align-items-center gap-3">
+            <button class="dark-mode-toggle" id="darkModeToggle">
+              <span class="toggle-icon"></span>
+            </button>
 
           <div class="btn-group" role="group" aria-label="Language toggle">
             <input type="radio" class="btn-check" name="lang" id="eng" autocomplete="off" checked />
@@ -164,20 +170,20 @@
           <div class="footer-column">
             <h3>Quick Links</h3>
             <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#targetSection">Services</a></li>
-              <li><a href="#">Gallery</a></li>
-              <li><a href="#">Contact</a></li>
+              <li><a href="../index.html">Home</a></li>
+              <li><a href="../aboutUs/aboutUs.html">About</a></li>
+              <li><a href="../index.html">Services</a></li>
+              <li><a href="../index.html">Gallery</a></li>
+              <li><a href="../aboutUs/aboutUs.html">Contact</a></li>
             </ul>
           </div>
 
           <div class="footer-column">
             <h3>Our Services</h3>
             <ul>
-              <li><a href="#">Cleaning services</a></li>
-              <li><a href="#">Maintenance services</a></li>
-              <li><a href="#">Security services</a></li>
+              <li><a href="../services/CleaningService/Cleaning.html">Cleaning services</a></li>
+              <li><a href="../services/Maintenance Service/Maintenance.html">Maintenance services</a></li>
+              <li><a href="../services/Security Service/Security.html">Security services</a></li>
             </ul>
           </div>
 
@@ -210,6 +216,8 @@
 
   <script src="./home/body/scripts/app.js"></script>
   <script src="./home/navbar/navbarApp.js"></script>
+  <script src="../navbar/lightDark.js"></script>
+    <!-- <script ></script> STAVI GERMAN SCRIPT  -->
 </body>
 
 </html>

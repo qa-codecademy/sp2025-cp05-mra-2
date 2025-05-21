@@ -1,357 +1,377 @@
 /* Reset and Global Styles */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-html, body {
-    overflow-x: hidden;
-    width: 100%;
-    font-family: 'Roboto', sans-serif;
-    background-color: #f5f5f5;
-    color: #333;
-    scroll-behavior: smooth;
+.german,
+.english {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  overflow-x: hidden;
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+  scroll-behavior: smooth;
 }
 
 /* Main Image and Text Section */
 .mainImageAndTextDiv {
-    position: relative;
-    margin-top: 5%;
-    margin-left: 40px;
-    width: 50%;
-    float: left;
-    transform-origin: left center;
+  position: relative;
+  margin-top: 5%;
+  margin-left: 40px;
+  width: 50%;
+  float: left;
+  transform-origin: left center;
 }
 
 .mainImage {
-    width: 100%;
-    height: 50vh;
-    border-radius: 20px;
-    transition: transform 0.3s ease;
+  width: 100%;
+  height: 50vh;
+  border-radius: 20px;
+  transition: transform 0.3s ease;
 }
 
 .mainImage:hover {
-    transform: scale(1.02);
+  transform: scale(1.02);
 }
 
 .mainImageText {
-    text-align: left;
-    font-size: 3rem;
-    color: magenta;
-    font-family: Arial, Helvetica, sans-serif;
+  text-align: left;
+  font-size: 3rem;
+  color: magenta;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 /* Blurred Div on Top of Image */
 .blurredDivOnTopOfImage {
-    position: absolute;
-    bottom: 2px;
-    left: 20px;
-    width: 170px;
-    padding: 10px;
-    backdrop-filter: blur(10px);
-    background-color: rgba(255, 255, 255, 0.4);
-    text-align: center;
-    border-radius: 15px;
-    z-index: 2;
-    transition: all 0.3s ease;
-    cursor: default;
+  position: absolute;
+  bottom: 2px;
+  left: 20px;
+  width: 170px;
+  padding: 10px;
+  backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.4);
+  text-align: center;
+  border-radius: 15px;
+  z-index: 2;
+  transition: all 0.3s ease;
+  cursor: default;
 }
 
 .circle10Plus {
-    background-color: rgba(214, 88, 214, 0.6);
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    margin: 0 auto 5px auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font-weight: bold;
-    backdrop-filter: blur(4px);
+  background-color: rgba(214, 88, 214, 0.6);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  margin: 0 auto 5px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  backdrop-filter: blur(4px);
 }
 
 /* Text and Button Side Section */
 .mainDivTextAndButtonSubDiv {
-    float: right;
-    width: 40%;
-    margin-top: 7%;
-    margin-right: 4%;
-    padding: 20px;
-    backdrop-filter: blur(8px);
-    border-radius: 10px;
-    color: black;
-    font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    text-align: left;
+  float: right;
+  width: 40%;
+  margin-top: 7%;
+  margin-right: 4%;
+  padding: 20px;
+  backdrop-filter: blur(8px);
+  border-radius: 10px;
+  color: black;
+  font-family: "Inter", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: left;
 }
 
 .mainSubDivHeader {
-    font-size: 3rem;
+  font-size: 3rem;
 }
 
 .mainSubDivText {
-    font-size: 2rem;
+  font-size: 2rem;
 }
 
 .mainSubDivButtonServices {
-    display: inline-block;
-    padding: 0.75em 1.5em;
-    font-size: 1rem;
-    font-weight: 600;
-    text-align: center;
-    text-decoration: none;
-    color: #ffffff;
-    background: linear-gradient(135deg, #28a745, #218838);
-    border: none;
-    border-radius: 0.5em;
-    cursor: pointer;
-    transition: background 0.4s ease, transform 0.3s ease, box-shadow 0.3s ease;
-    margin-top: 10px;
-    box-shadow: 0 4px 12px rgba(40, 167, 69, 0.4);
+  display: inline-block;
+  padding: 0.75em 1.5em;
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  color: #ffffff;
+  background: linear-gradient(135deg, #28a745, #218838);
+  border: none;
+  border-radius: 0.5em;
+  cursor: pointer;
+  transition: background 0.4s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  margin-top: 10px;
+  box-shadow: 0 4px 12px rgba(40, 167, 69, 0.4);
 }
 
 .mainSubDivButtonServices:hover {
-    background: linear-gradient(135deg, #218838, #1e7e34);
-    transform: translateY(-5px) scale(1.05);
-    box-shadow: 0 8px 20px rgba(40, 167, 69, 0.6);
+  background: linear-gradient(135deg, #218838, #1e7e34);
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: 0 8px 20px rgba(40, 167, 69, 0.6);
 }
 
 /* Stats Section */
 .statsContainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 60px;
-    margin: 60px 0;
-    flex-wrap: wrap;
-    text-align: center;
-    cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  margin: 60px 0;
+  flex-wrap: wrap;
+  text-align: center;
+  cursor: pointer;
 }
 
 .statBlock {
-    padding: 20px;
-    background-color: rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(6px);
-    border-radius: 15px;
-    min-width: 150px;
-    transition: all 0.4s ease;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    transform: perspective(600px) translateZ(0);
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(6px);
+  border-radius: 15px;
+  min-width: 150px;
+  transition: all 0.4s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transform: perspective(600px) translateZ(0);
 }
 
 .statBlock:hover {
-    transform: perspective(600px) translateZ(10px) scale(1.08);
-    box-shadow: 0 8px 20px rgba(76, 175, 80, 0.4);
-    background-color: rgba(255, 255, 255, 0.3);
+  transform: perspective(600px) translateZ(10px) scale(1.08);
+  box-shadow: 0 8px 20px rgba(76, 175, 80, 0.4);
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
 .statNumber {
-    font-size: 2.5rem;
-    font-weight: bold;
-    color: #4CAF50;
-    transition: color 0.4s ease;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #4caf50;
+  transition: color 0.4s ease;
 }
 
 .statLabel {
-    font-size: 1rem;
-    color: #333;
-    margin-top: 5px;
-    transition: color 0.4s ease;
+  font-size: 1rem;
+  color: #333;
+  margin-top: 5px;
+  transition: color 0.4s ease;
 }
 
 .statBlock:hover .statNumber {
-    color: #388E3C;
+  color: #388e3c;
 }
 
 .statBlock:hover .statLabel {
-    color: #555;
+  color: #555;
 }
 
 /* Services Section */
 .servicesHeader {
-    text-align: center;
-    font-size: 32px;
-    margin: 60px 0 30px;
-    color: #222;
+  text-align: center;
+  font-size: 32px;
+  margin: 60px 0 30px;
+  color: #222;
 }
 
 .servicesSection {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    padding: 0 20px;
-    justify-content: center;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 0 20px;
+  justify-content: center;
 }
 
 .section {
-    background-color: #fff;
-    width: calc(33.33% - 13.33px);
-    display: flex;
-    flex-direction: column;
-    border-radius: 15px;
-    padding: 20px;
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: #fff;
+  width: calc(33.33% - 13.33px);
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .section:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
 }
 
 .sectionImg {
-    height: 180px;
-    overflow: hidden;
-    border-radius: 10px;
-    margin-bottom: 15px;
+  height: 180px;
+  overflow: hidden;
+  border-radius: 10px;
+  margin-bottom: 15px;
 }
 
 .sectionImg img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
 }
 
 .sectionText {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .sectionText h2 {
-    font-size: 20px;
-    color: #222;
-    margin-bottom: 8px;
+  font-size: 20px;
+  color: #222;
+  margin-bottom: 8px;
 }
 
 .sectionText p,
 .checklist li {
-    font-size: 14px;
-    color: #555;
+  font-size: 14px;
+  color: #555;
 }
 
 .checklist {
-    list-style: none;
-    padding-left: 0;
+  list-style: none;
+  padding-left: 0;
 }
 
 .checklist li::before {
-    content: "✓ ";
-    color: green;
-    font-weight: bold;
-    margin-right: 6px;
+  content: "✓ ";
+  color: green;
+  font-weight: bold;
+  margin-right: 6px;
 }
 
 /* Call to Action Button */
 .cta-button {
-    background: linear-gradient(135deg, #4CAF50, #2E7D32);
-    color: white;
-    padding: 0.75em 1.5em;
-    font-size: 1rem;
-    font-weight: bold;
-    border: none;
-    border-radius: 0.5em;
-    cursor: pointer;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: background 0.3s ease, transform 0.2s ease;
-    margin-top: 1.5em;
+  background: linear-gradient(135deg, #4caf50, #2e7d32);
+  color: white;
+  padding: 0.75em 1.5em;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 0.5em;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background 0.3s ease, transform 0.2s ease;
+  margin-top: 1.5em;
 }
 
 .cta-button:hover {
-    background: linear-gradient(135deg, #66BB6A, #388E3C);
-    transform: translateY(-2px);
+  background: linear-gradient(135deg, #66bb6a, #388e3c);
+  transform: translateY(-2px);
 }
 
 .cta-button:active {
-    background: linear-gradient(135deg, #388E3C, #1B5E20);
+  background: linear-gradient(135deg, #388e3c, #1b5e20);
 }
 
 /* Responsive Styles */
 @media (max-width: 768px) {
-    .mainImageAndTextDiv,
-    .mainDivTextAndButtonSubDiv {
-        width: 90%;
-        margin: 20px auto;
-        float: none;
-        text-align: center;
-    }
+  .mainImageAndTextDiv,
+  .mainDivTextAndButtonSubDiv {
+    width: 90%;
+    margin: 20px auto;
+    float: none;
+    text-align: center;
+  }
 
-    .mainImage {
-        height: 40vh;
-    }
+  .mainImage {
+    height: 40vh;
+  }
 
-    .blurredDivOnTopOfImage {
-        width: 15vw;
-        bottom: 20%;
-        margin-left: 10px;
-    }
+  .blurredDivOnTopOfImage {
+    width: 15vw;
+    bottom: 20%;
+    margin-left: 10px;
+  }
 
-    .circle10Plus {
-        width: 35px;
-        height: 35px;
-        margin-left: 30px;
-    }
+  .circle10Plus {
+    width: 35px;
+    height: 35px;
+    margin-left: 30px;
+  }
 
-    .mainSubDivHeader {
-        font-size: 2.5rem;
-    }
+  .mainSubDivHeader {
+    font-size: 2.5rem;
+  }
 
-    .mainSubDivText {
-        font-size: 1.5rem;
-    }
+  .mainSubDivText {
+    font-size: 1.5rem;
+  }
 
-    .mainSubDivButtonServices {
-        width: 50%;
-        margin-top: 10%;
-    }
+  .mainSubDivButtonServices {
+    width: 50%;
+    margin-top: 10%;
+  }
 
-    .statsContainer {
-        flex-direction: column;
-        gap: 40px;
-        margin: 40px 0;
-    }
+  .statsContainer {
+    flex-direction: column;
+    gap: 40px;
+    margin: 40px 0;
+  }
 
-    .statBlock {
-        width: 80%;
-    }
+  .statBlock {
+    width: 80%;
+  }
 }
 
 @media (max-width: 480px) {
-    .mainImage {
-        height: 35vh;
-    }
+  .mainImage {
+    height: 35vh;
+  }
 
-    .blurredDivOnTopOfImage {
-        width: 20vw;
-        bottom: 15%;
-    }
+  .blurredDivOnTopOfImage {
+    width: 20vw;
+    bottom: 15%;
+  }
 
-    .circle10Plus {
-        width: 30px;
-        height: 30px;
-    }
+  .circle10Plus {
+    width: 30px;
+    height: 30px;
+  }
 
-    .mainSubDivHeader {
-        font-size: 2rem;
-    }
+  .mainSubDivHeader {
+    font-size: 2rem;
+  }
 
-    .mainSubDivText {
-        font-size: 1.2rem;
-    }
+  .mainSubDivText {
+    font-size: 1.2rem;
+  }
 
-    .mainSubDivButtonServices {
-        width: 60%;
-        font-size: 1.2rem;
-    }
+  .mainSubDivButtonServices {
+    width: 60%;
+    font-size: 1.2rem;
+  }
 
-    .statBlock {
-        width: 90%;
-    }
+  .statBlock {
+    width: 90%;
+  }
 
-    .statNumber {
-        font-size: 1.8rem;
-    }
+  .statNumber {
+    font-size: 1.8rem;
+  }
+}
+
+body.dark-mode .mainDivTextAndButtonSubDiv,
+body.dark-mode .mainDivTextAndButtonSubDiv h1.mainSubDivHeader,
+body.dark-mode .mainDivTextAndButtonSubDiv p.mainSubDivText {
+  color: #f5f5f5 !important;
+}
+
+/* If the button text needs changing too */
+body.dark-mode .mainDivTextAndButtonSubDiv .mainSubDivButtonServices {
+  color: #f5f5f5 !important;
+  border-color: #f5f5f5 !important;
 }
