@@ -1,0 +1,265 @@
+/* Reset and Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    overflow-x: hidden;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+/* Services Header */
+.servicesHeader {
+    text-align: center;
+    font-size: 32px;
+    margin: 60px 0 30px;
+    color: #222;
+}
+
+/* Services Section Layout */
+.servicesSection {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 0 20px;
+    width: 100%;
+}
+
+/* Individual Service Card */
+.section {
+    background-color: #fff;
+    width: calc(33.33% - 13.33px);
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.5s ease, color 0.5s ease;
+}
+
+.section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+/* Service Card Image */
+.sectionImg {
+    height: 180px;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.sectionImg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Service Card Text */
+.sectionText h2 {
+    font-size: 20px;
+    color: #222;
+    margin-bottom: 8px;
+}
+
+.sectionText p {
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+/* Checklist inside Service Cards */
+.checklist {
+    list-style: none;
+    padding-left: 0;
+}
+
+.checklist li {
+    font-size: 14px;
+    margin-bottom: 6px;
+    color: #555;
+}
+
+.checklist li::before {
+    content: "✓ ";
+    color: #555;
+    font-weight: bold;
+    margin-right: 6px;
+}
+
+/* Beautiful Learn More Button */
+a.custom-link {
+    display: inline-block;
+    padding: 12px 25px;
+    color: white !important;
+    background: rgb(199, 30, 94);
+    border-radius: 30px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 16px;
+    text-decoration: none;
+    box-shadow: 0 4px 10px rgba(199, 30, 94, 0.4);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease;
+    user-select: none;
+}
+
+a.custom-link:hover {
+    background-color: #a71f72;
+    box-shadow: 0 6px 20px rgba(167, 31, 114, 0.6);
+    transform: translateY(-2px);
+}
+
+a.custom-link:active {
+    transform: translateY(0);
+    box-shadow: 0 3px 8px rgba(199, 30, 94, 0.3);
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+    background-color: #121212;
+    color: #f5f5f5;
+}
+
+body.dark-mode .servicesHeader {
+    color: #eee;
+}
+
+body.dark-mode .section {
+    background-color: #1e1e1e;
+    color: #ddd;
+    box-shadow: 0 6px 20px rgba(255, 255, 255, 0.1);
+}
+
+body.dark-mode .section:hover {
+    box-shadow: 0 12px 24px rgba(255, 255, 255, 0.15);
+}
+
+body.dark-mode .sectionText h2 {
+    color: #f5f5f5;
+}
+
+body.dark-mode .sectionText p,
+body.dark-mode .checklist li {
+    color: #ccc;
+}
+
+body.dark-mode .checklist li::before {
+    color: rgb(199, 30, 94);
+}
+
+body.dark-mode a.custom-link {
+    background-color: rgb(199, 30, 94);
+    color: white !important;
+}
+
+body.dark-mode a.custom-link:hover {
+    background-color: #a71f72;
+}
+
+/* Reset and Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    overflow-x: hidden;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+/* Services Header */
+.servicesHeader {
+    text-align: center;
+    font-size: 32px;
+    margin: 60px 0 30px;
+    color: #222;
+}
+
+/* Services Section Layout */
+.servicesSection {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 0 20px;
+    width: 100%;
+}
+
+/* Individual Service Card */
+.section {
+    background-color: #fff;
+    width: calc(33.33% - 13.33px);
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+/* Service Card Image */
+.sectionImg {
+    height: 180px;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.sectionImg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Service Card Text */
+.sectionText h2 {
+    font-size: 20px;
+    color: #222;
+    margin-bottom: 8px;
+}
+
+.sectionText p {
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+/* Checklist inside Service Cards */
+.checklist {
+    list-style: none;
+    padding-left: 0;
+}
+
+.checklist li {
+    font-size: 14px;
+    margin-bottom: 6px;
+    color: #555;
+}
+
+.checklist li::before {
+    content: "✓ ";
+    color: green;
+    font-weight: bold;
+    margin-right: 6px;
+}
