@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Simple SPA Example</title>
+		<script src="https://cdn.tailwindcss.com"></script>
+		<link rel="stylesheet" href="styles.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+	</head>
+	<body class="bg-gray-50 min-h-screen">
+		<!-- Navigation -->
+		<nav class="bg-white shadow-lg fixed w-full z-50">
+			<div class="max-w-6xl mx-auto px-4">
+				<div class="flex justify-between items-center h-16">
+					<div class="flex items-center">
+						<i class="fas fa-code text-blue-600 text-2xl mr-2"></i>
+						<span class="text-xl font-bold text-gray-800">TechMentors</span>
+					</div>
+					<div class="flex space-x-4">
+						<a
+							href="#"
+							class="nav-link text-gray-800 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium"
+							data-page="home"
+							>Home</a
+						>
+						<a
+							href="#"
+							class="nav-link text-gray-800 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium"
+							data-page="about"
+							>About Us</a
+						>
+						<a
+							href="#"
+							class="nav-link text-gray-800 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium"
+							data-page="contact"
+							>Contact</a
+						>
+					</div>
+				</div>
+			</div>
+		</nav>
+
+		<!-- Content Container -->
+		<div class="max-w-6xl mx-auto px-4 py-8 pt-24">
+			<!-- Home Page -->
+			<div id="home" class="page active">
+				<div class="text-center mb-12">
+					<h1 class="text-5xl font-bold text-gray-800 mb-4">
+						Welcome to TechMentors
+					</h1>
+					<p class="text-xl text-gray-600 mb-8">
+						Empowering the next generation of developers
+					</p>
+				</div>
+
+				<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+					<div class="bg-white rounded-lg shadow-md p-6 card-hover">
+						<div class="text-blue-600 text-3xl mb-4">
+							<i class="fas fa-laptop-code"></i>
+						</div>
+						<h3 class="text-xl font-semibold mb-2">Learn to Code</h3>
+						<p class="text-gray-600">
+							Master programming fundamentals with our expert-led courses.
+						</p>
+					</div>
+
+					<div class="bg-white rounded-lg shadow-md p-6 card-hover">
+						<div class="text-blue-600 text-3xl mb-4">
+							<i class="fas fa-users"></i>
+						</div>
+						<h3 class="text-xl font-semibold mb-2">Join Community</h3>
+						<p class="text-gray-600">
+							Connect with fellow developers and share your journey.
+						</p>
+					</div>
+
+					<div class="bg-white rounded-lg shadow-md p-6 card-hover">
+						<div class="text-blue-600 text-3xl mb-4">
+							<i class="fas fa-rocket"></i>
+						</div>
+						<h3 class="text-xl font-semibold mb-2">Build Projects</h3>
+						<p class="text-gray-600">
+							Create real-world projects and build your portfolio.
+						</p>
+					</div>
+				</div>
+
+				<div class="mt-12 text-center">
+					<button
+						class="bg-blue-600 text-white px-8 py-3 rounded-full hover:bg-blue-700">
+						Get Started Today
+					</button>
+				</div>
+			</div>
+
+			<!-- About Page -->
+			<div id="about" class="page">
+				<div class="text-center mb-12">
+					<h1 class="text-5xl font-bold text-gray-800 mb-4">About Us</h1>
+					<p class="text-xl text-gray-600">
+						We're passionate about making tech education accessible to everyone
+					</p>
+				</div>
+
+				<div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+					<div class="bg-white rounded-lg shadow-md p-6 card-hover">
+						<h2 class="text-2xl font-bold text-gray-800 mb-4">Our Story</h2>
+						<p class="text-gray-600 mb-4">
+							Founded in 2024, TechMentors emerged from a simple idea: to make
+							quality tech education accessible to everyone. We believe that
+							everyone deserves the opportunity to learn and grow in the tech
+							industry.
+						</p>
+						<p class="text-gray-600">
+							Our team of experienced developers and educators is committed to
+							providing the best learning experience possible.
+						</p>
+					</div>
+
+					<div class="bg-white rounded-lg shadow-md p-6 card-hover">
+						<h2 class="text-2xl font-bold text-gray-800 mb-4">Our Approach</h2>
+						<ul class="space-y-3 text-gray-600">
+							<li class="flex items-center">
+								<i class="fas fa-check-circle text-green-500 mr-2"></i>
+								Hands-on learning with real projects
+							</li>
+							<li class="flex items-center">
+								<i class="fas fa-check-circle text-green-500 mr-2"></i>
+								Personalized mentorship
+							</li>
+							<li class="flex items-center">
+								<i class="fas fa-check-circle text-green-500 mr-2"></i>
+								Community-driven support
+							</li>
+							<li class="flex items-center">
+								<i class="fas fa-check-circle text-green-500 mr-2"></i>
+								Industry-relevant curriculum
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+					<div class="bg-white rounded-lg shadow-md p-6 card-hover">
+						<h3 class="font-semibold text-lg mb-2">Our Mission</h3>
+						<p class="text-gray-600">
+							To provide the best learning resources for web development and
+							empower the next generation of developers.
+						</p>
+					</div>
+					<div class="bg-white rounded-lg shadow-md p-6 card-hover">
+						<h3 class="font-semibold text-lg mb-2">Our Vision</h3>
+						<p class="text-gray-600">
+							To create a world where quality tech education is accessible to
+							everyone, regardless of their background.
+						</p>
+					</div>
+					<div class="bg-white rounded-lg shadow-md p-6 card-hover">
+						<h3 class="font-semibold text-lg mb-2">Our Values</h3>
+						<p class="text-gray-600">
+							Innovation, Quality, and Continuous Learning are at the heart of
+							everything we do.
+						</p>
+					</div>
+				</div>
+			</div>
+
+			<!-- Contact Page -->
+			<div id="contact" class="page">
+				<div class="text-center mb-12">
+					<h1 class="text-5xl font-bold text-gray-800 mb-4">Contact Us</h1>
+					<p class="text-xl text-gray-600">Get in touch with our team</p>
+				</div>
+
+				<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+					<div class="bg-white rounded-lg shadow-md p-6 card-hover">
+						<h2 class="text-2xl font-bold text-gray-800 mb-4">Get in Touch</h2>
+						<div class="space-y-4">
+							<div class="flex items-center">
+								<i class="fas fa-envelope text-blue-600 mr-3"></i>
+								<span class="text-gray-600">contact@techmentors.com</span>
+							</div>
+							<div class="flex items-center">
+								<i class="fas fa-phone text-blue-600 mr-3"></i>
+								<span class="text-gray-600">+1 (555) 123-4567</span>
+							</div>
+							<div class="flex items-center">
+								<i class="fas fa-map-marker-alt text-blue-600 mr-3"></i>
+								<span class="text-gray-600">123 Tech Street, Digital City</span>
+							</div>
+						</div>
+					</div>
+
+					<div class="bg-white rounded-lg shadow-md p-6 card-hover">
+						<form class="space-y-4" id="contactForm">
+							<div>
+								<label
+									class="block text-gray-700 text-sm font-bold mb-2"
+									for="name">
+									Name
+								</label>
+								<input
+									class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+									id="name"
+									type="text"
+									placeholder="Your name" />
+							</div>
+							<div>
+								<label
+									class="block text-gray-700 text-sm font-bold mb-2"
+									for="email">
+									Email
+								</label>
+								<input
+									class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+									id="email"
+									type="email"
+									placeholder="Your email" />
+							</div>
+							<div>
+								<label
+									class="block text-gray-700 text-sm font-bold mb-2"
+									for="message">
+									Message
+								</label>
+								<textarea
+									class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+									id="message"
+									rows="4"
+									placeholder="Your message"></textarea>
+							</div>
+							<div>
+								<button
+									class="bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 w-full"
+									type="submit">
+									Send Message
+								</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script src="app.js"></script>
+	</body>
+</html>
