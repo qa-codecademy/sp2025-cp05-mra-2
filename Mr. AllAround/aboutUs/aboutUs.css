@@ -1,0 +1,193 @@
+/* ======== MAIN DIV ======== */
+.aboutUs {
+  position: relative;
+  width: 77%;
+  margin: 30px auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  padding: 20px;
+  z-index: 0;
+}
+
+/* Pseudo-elements as animated borders */
+.aboutUs::before,
+.aboutUs::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  z-index: -1;
+  background: linear-gradient(to bottom,  #ff00ff 0%, rgb(199, 30, 94)25%, #ff00ff 50%, rgb(199, 30, 94)75%, #ff00ff 100%);
+  background-size: 100% 300%;
+  animation: borderFlowSmooth 5s linear infinite;
+}
+
+.aboutUs::before {
+  left: 0;
+}
+
+.aboutUs::after {
+  right: 0;
+}
+
+/* Smooth looping downward flow */
+@keyframes borderFlowSmooth {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 0 100%;
+  }
+}
+/* ========== OUR MISSION ========= */
+.ourMission,
+.ourMission-IMG {
+  width: 50%;
+  height: 500px; /* Fixed height to avoid percent issues */
+  box-sizing: border-box;
+  padding: 20px;
+}
+/* ======== OUR MISSION img ========= */
+.ourMission-IMG {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ourMission-IMG img {
+  width: 95%;
+  height: auto;
+  max-height: 100%;
+  object-fit: contain;
+  padding-bottom: 90px;
+}
+
+.aboutUs-headers {
+  text-align: center;
+  margin-top: 0;
+  font-weight: bold;
+  font-size: 220%;
+}
+
+.aboutUs-text {
+  font-weight: 400;
+  color: black;
+  padding: 15px;
+}
+/* ====== Google Maps ======= */
+.aboutUs-GMaps1 {
+  width: 50%;
+  height: 450px;
+  background-color: rgb(255, 255, 255); /* Just for visibility */
+  box-sizing: border-box;
+  padding: 10px;
+  border: 5px solid transparent; /* Initial transparent border */
+  border-radius: 10px;
+}
+.aboutUs-GMaps2 {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  border-radius: 30px;
+}
+/* ======= OUR LOCATION ======== */
+.location1 {
+  width: 49%;
+  height: auto;
+  margin-right: 1%;
+}
+/* ========= OUR SERVICES ========= */
+.ourServices{
+  width: 49%;
+  height: auto;
+  margin-left: 1%;
+}
+/* ========= */
+.Our-ServicesIMG{
+  width: 50%;
+  height: 500px; 
+  box-sizing: border-box;
+  padding: 20px;
+}
+.Our-ServicesIMG img {
+  width: 95%;
+  height: auto;
+  max-height: 100%;
+  object-fit: contain;
+}
+/* ==== Footer Layout on About US ==== */
+/* ===== */
+.page-container2 {
+  display: flex;
+  flex-direction: column;
+  min-height: 80vh;
+  width: 100%;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ============ Rediredtion to Contact Us page ========== */
+/* ============ Trough Eye Catching Div =========== */
+
+.contact-cta {
+  background: linear-gradient(135deg, rgb(199, 30, 94), rgb(120, 25, 110));
+  padding: 80px 40px;
+  text-align: center;
+  margin: 80px auto;
+  border-radius: 24px;
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.15);
+  max-width: 100%;
+  width: 100%;
+  color: white;
+}
+
+.contact-cta h2 {
+  font-size: 3.5rem;
+  margin-bottom: 20px;
+  font-weight: 800;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.4);
+}
+
+.contact-cta p {
+  font-size: 1.3rem;
+  margin-bottom: 30px;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.25);
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cta-button {
+  background: linear-gradient(135deg, #3dffd5, #0bfc17);
+  display: inline-block;
+  padding: 18px 42px;
+  background-color: white;
+  color: rgb(199, 30, 94);
+  text-decoration: none;
+  border-radius: 50px;
+  font-weight: bold;
+  font-size: 1.4rem;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+  transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+  background: linear-gradient(135deg, #00ff08, #2E7D32);
+  background-color: #ffe6f0;
+  color: rgb(140, 20, 70);
+  transform: scale(1.07);
+}
+
+body.dark-mode .aboutUs-text,
+body.dark-mode .aboutUs-headers,
+body.dark-mode .contact-cta p {
+  color: #f5f5f5 !important; /* Light text in dark mode */
+}
+
+/* If you have other text elements that need fixing, add them like this: */
+body.dark-mode .location1 p,
+body.dark-mode .ourServices p {
+  color: #f5f5f5 !important;
+}
